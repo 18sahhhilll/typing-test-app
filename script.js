@@ -141,7 +141,7 @@ restartBtn.addEventListener("click", () => {
 inputBox.addEventListener("input", () => {
   const input = inputBox.value;
   const spans = textDisplay.querySelectorAll("span");
-
+  textDisplay.scrollTop = textDisplay.scrollHeight;
   input.split("").forEach((char, i) => {
     if (!spans[i]) return;
     if (char === testText[i]) {
