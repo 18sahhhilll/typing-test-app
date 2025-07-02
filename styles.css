@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111827;
+  color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #1f2937;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #f472b6;
+}
+
+#target-text {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#textDisplay {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 20px;
+  text-align: center;   
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: #374151;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #3b82f6;
+  width: 0%;
+  transition: width 0.2s;
+}
+
+select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #374151;
+  color: white;
+  border: none;
+  margin-left: 10px;
+}
+#restartBtn {
+  background-color: #ef4444;
+  margin-left: 10px;
+}
+
+
+.success {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #34d399;
+  animation: popUp 0.8s ease-in-out forwards;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+

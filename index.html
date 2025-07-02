@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!--<audio id="bgMusic" src="assets/bg-music.mp3" autoplay loop></audio>-->
+      <h1>Typing Test</h1>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div id="textDisplay" class="text-display"></div>
+
+      <textarea id="inputBox" placeholder="Start typing..." disabled></textarea>
+
+      <div class="info">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <span id="timer">Time: 60s</span>
+        <button id="startBtn">Start Test</button>
+        <button id="toggleMusicBtn">🔇 Mute</button>
+        <button id="restartBtn" class="hidden">Restart Test</button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <audio id="bgMusic" src="assets/bg-music.mp3" loop></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
